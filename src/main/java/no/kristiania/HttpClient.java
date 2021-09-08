@@ -4,9 +4,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 
-public class httpClient {
+public class HttpClient {
+
+    public HttpClient(String host, int port, String requestTarget) {
+    }
+
+    public int getStatusCode () {
+        return 0;
+    }
+
+
 
     public static void main(String[] args) throws IOException {
+
         Socket socket = new Socket("httpbin.org", 80);
 
         socket.getOutputStream().write(
